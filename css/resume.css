@@ -113,3 +113,7 @@ a {
   color: #17a2b8; }
   a:hover, a:focus, a:active {
     color: #0f6674; }
+
+.icon-materializecss:before{
+  transform: scale(1.5);
+}
