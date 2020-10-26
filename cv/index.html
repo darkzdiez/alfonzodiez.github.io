@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Alfonzo Diez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="devicon/devicon.min.css">
+    
+    <style>
+        :root {
+            --primary: #215868;
+            --white: #ffffff;
+        }
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 2px 3px #b1b0b0;
+            -webkit-text-stroke: .2px #FFF;
+            font-style: italic;
+            font-weight: 800;
+        }
+        .position-sticky {
+            position: sticky !important;
+            top: 0;
+            z-index: 9999;
+        }
+        .img-profile {
+            padding: 3px;
+            background-color: var(--primary);
+            position: absolute;
+            right: 10px;
+            width: 113px;
+            top: -54px;
+            overflow: hidden;
+        }
+        .img-profile > img {
+            width: 100%;
+            display: block;
+        }
+        .section__title {
+            color: var(--white);
+            font-weight: 700;
+            font-size: 22px;
+            background-color: var(--primary);
+            text-align: center;
+            font-style: italic;
+            margin: 0;
+            padding: 3px;
+            position: relative;
+        }
+        .personal-information {
+            display: grid;
+            grid-template-columns: auto 1fr;
+        }
+        .personal-information > div{
+            font-size: 14px;
+            padding: 3px 215px 3px 15px;
+        }
+        .personal-information > div:nth-child(odd) {
+            padding: 3px 30px 3px 15px;
+            background: var(--primary);
+            font-weight: 600;
+            color: #FFF;
+            font-style: italic;
+        }
+        ul >  li {
+            list-style: none;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        ul.list--disc >  li {
+            list-style: disc;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin-top: 5px;
+        }
+        .list--check {
+            position: relative;
+        }
+        .list--check:before {
+            content: '✓';
+            position: absolute;
+            left: -17px;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .technologies {
+            display: grid;
+            grid-template-columns: auto 1fr auto 1fr auto 1fr;
+            color: var(--primary);
+            padding: 30px 15px;
+            gap: 30px 15px;
+        }
+        .technologies__icon {
+            font-size: 3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .technologies__name {
+            justify-content: end;
+            align-items: center;
+            display: flex;
+            padding-left: 15px;
+            font-weight: 800;
+            font-family: 'Nunito', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Síntesis Curricular</h1>
+    <div class="section__title">
+        DATOS PERSONALES
+        <div class="img-profile">
+            <img src="perfil.png" alt="">
+        </div>
+    </div>
+    <div class="personal-information">
+        <div>Apellidos y Nombres:</div>
+        <div>Diez Hernández Alfonzo Rafael</div>
+        <div>Edad:</div>
+        <div>31 años</div>
+        <div>Cédula de Identidad:</div>
+        <div>V-18.757.241</div>
+        <div>Dirección de Habitación:</div>
+        <div>Buenos Aires - Capital federal, Nuñes, calle Campos Salles 2175 entre calles Cuba y Arcos apartamento 3D</div>
+        <div>Teléfonos:</div>
+        <div>+54 11 2370 5207</div>
+        <div>Estado civil:</div>
+        <div>Casado</div>
+        <div>Profesión:</div>
+        <div><strong>Desarrollador de aplicaciones y sitios web</strong></div>
+        <div>Correo Electrónico:</div>
+        <div>alfonzodiez@gmail.com</div>
+        <div>Sitio Web:</div>
+        <div>https://alfonzodiez.info.ve/</div>
+        <div>Idiomas:</div>
+        <div><strong>Español:</strong> Nativo, <strong>Inglés:</strong> Básico (Lectura, Escritura)</div>
+    </div>
+    <div class="section__title position-sticky">ESTUDIOS REALIZADOS</div>
+    <ul class="list--disc">
+        <li>
+            Colegio Universitario de Administración y Mercadeo (CUAM) | San Felipe, Estado Yaracuy
+            <ul>
+                <li>Técnico Superior Universitario mención informática.</li>
+                <li>Año 2009.</li>
+            </ul>
+        </li>
+        <li>
+            Colegio Universitario de Administración y Mercadeo (CUAM) | San Felipe, Estado Yaracuy
+            <ul>
+                <li>Diplomado en componente docente.</li>
+                <li>Año 2015 a 2016.</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="section__title position-sticky">EXPERIENCIA LABORAL</div>
+    <ul class="list--disc">
+        <li>
+            Diversos proyectos tecnológicos | Consejo Legislativo del Estado Yaracuy (CLEY)
+            <ul>
+                <li>Enero 2009 – marzo 2010.</li>
+                <li class="list--check">Diseñador y desarrollador del sitio web de la institución. </li>
+                <li class="list--check">Planificador y diseñador del proyecto de sistema administrativo independiente de plataforma del CLEY. </li>
+                <li class="list--check">Supervisor y ejecutor de la implementación de la primera y segunda fase del plan de migración a software libre en el CLEY. </li>
+            </ul>
+        </li>
+        <li>
+            Desarrollador Web | PROSALUD edo. Yaracuy
+            <ul>
+                <li>marzo 2010 – junio 2010.
+                </li>
+                <li class="list--check">Diseñador y desarrollador del sitio web de la institución.</li>
+                <li class="list--check">Desarrollo de sistema recepción y sistema de Causa Básica de Defunción.</li>
+            </ul>
+        </li>
+        <li>
+            Desarrollador Web | Alcaldía del Municipio San Felipe edo. Yaracuy
+            <ul>
+                <li>Febrero 2017 – marzo 2017.</li>
+                <li class="list--check">Diseñador y desarrollador del sitio web de la institución.</li>
+                <li class="list--check">Desarrollo del sistema para la elección de la candidata ‘Miss Interactiva’ para la feria de mayo 2017.</li>
+            </ul>
+        </li>
+        <li>
+            Desarrollador Web | Alcaldía del Municipio Manuel Monge edo. Yaracuy
+            <ul>
+                <li>Junio 2017 – Julio 2017.</li>
+                <li class="list--check">Diseñador y desarrollador del sitio web de la institución.</li>
+            </ul>
+        </li>
+        <li>
+            Coordinador de Mantenimiento de Hardware y Software | Gobernación del Estado Yaracuy Venezuela
+            <ul>
+                <li>Enero 2012 – febrero 2018</li>
+                <li class="list--check">Diseñador y desarrollador de los tres últimos sitios web de la institución.</li>
+                <li class="list--check">Desarrollo, mantenimiento y administración de los múltiples sistemas de la institución.</li>
+                <li class="list--check">Coordinación del equipo de soporte técnico y redes.</li>
+                <li class="list--check">Administrador de los servidores de aplicaciones y redes.</li>
+            </ul>
+        </li>
+        <li>
+            Coordinador de Desarrollo | OSOLE Consultoría de Internet
+            <ul>
+                <li>Febrero 2019 – Octubre 2020.</li>
+                <li class="list--check">Coordinar la creación y asignación de nuevo proyectos</li>
+                <li class="list--check">Deployment de los nuevos proyecto</li>
+                <li class="list--check">Desarrollador web Backend</li>
+                <li class="list--check">Administración de los servicios de hosting y VPS</li>
+            </ul>
+        </li>
+    </ul>
+    <div class="section__title position-sticky">CERTIFICACIONES Y DEMÁS ACTIVIDADES PROFESIONALES</div>
+    <ul class="list--disc">
+        <li>
+            Platzi
+            <ul>
+                <li class="list--check">Curso de PHP con Laravel 2017</li>
+                <li class="list--check">Curso Básico de Vue.js 2017</li>
+                <li class="list--check">Curso de Creación de Temas y Plugins en WordPress</li>
+                <li class="list--check">Curso de CSS Grid Layout</li>
+                <li class="list--check">Curso de Desarrollo Web Online</li>
+                <li class="list--check">Curso de Desarrollo Web Online 2016</li>
+                <li class="list--check">Curso de Introducción a PHP 2018</li>
+                <li class="list--check">Curso de Responsive Design</li>
+                <li class="list--check">Curso Gratis de Programación Básica</li>
+                <li class="list--check">Curso profesional de Git y GitHub 2017</li>
+                <li class="list--check">Introducción a PHP-2017</li>
+                <li class="list--check">Introducción a Terminal y Línea de Comandos 2016</li>
+                <li class="list--check">Carrera Desarrollo con WordPress</li>
+                <li class="list--check">Carrera Desarrollo Web Backend con PHP</li>
+            </ul>
+        </li>
+        <li>Ponente Conferencia "HablemosWeb" en el estado Yaracuy 2013.</li>
+        <li>Ponente "congreso software libre" en el estado Yaracuy 2012.</li>
+    </ul>
+    <div class="section__title position-sticky">Front-end</div>
+    <div class="technologies">
+        <div class="technologies__icon"><i class="devicon-html5-plain"></i></div>
+        <div class="technologies__name">HTML 5</div>
+        <div class="technologies__icon"><i class="devicon-css3-plain"></i></div>
+        <div class="technologies__name">HTML 5</div>
+        <div class="technologies__icon"><i class="devicon-javascript-plain"></i></div>
+        <div class="technologies__name">JavaScript</div>
+        <div class="technologies__icon"><i class="devicon-bootstrap-plain"></i></div>
+        <div class="technologies__name">Bootstrap</div>
+        <div class="technologies__icon"><i class="devicon-vuejs-plain"></i></div>
+        <div class="technologies__name">VueJS</div>
+        <div class="technologies__icon"><i class="devicon-sass-original"></i></div>
+        <div class="technologies__name">Sass</div>
+        <div class="technologies__icon"><i class="devicon-jquery-plain"></i></div>
+        <div class="technologies__name">jQuery</div>
+        <div class="technologies__icon"><i class="devicon-webpack-plain"></i></div>
+        <div class="technologies__name">Webpack</div>
+        <div class="technologies__icon"><i class="devicon-ionic-original"></i></div>
+        <div class="technologies__name">Ionic</div>
+        <div class="technologies__icon"><i class="devicon-angularjs-plain"></i></div>
+        <div class="technologies__name">Angular</div>
+    </div>
+    <div class="section__title position-sticky">Back-end</div>
+    <div class="technologies">
+        <div class="technologies__icon"><i class="devicon-php-plain"></i></div>
+        <div class="technologies__name">PHP</div>
+        <div class="technologies__icon"><i class="devicon-laravel-plain"></i></div>
+        <div class="technologies__name">Laravel</div>
+        <div class="technologies__icon"><i class="devicon-wordpress-plain"></i></div>
+        <div class="technologies__name">WordPress</div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+        <div class="technologies__icon"></div>
+        <div class="technologies__name"></div>
+    </div>
+</body>
+</html>
