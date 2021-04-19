@@ -13,6 +13,11 @@
             --primary: #215868;
             --white: #ffffff;
         }
+        body {
+            max-width: 992px;
+            margin: auto;
+            user-select: none;
+        }
         * {
             font-family: 'Montserrat', sans-serif;
         }
@@ -98,6 +103,8 @@
             padding: 30px 15px;
             gap: 30px 15px;
         }
+        @media (min-width: 992px) {
+        }
         .technologies__icon {
             font-size: 3em;
             display: flex;
@@ -111,6 +118,15 @@
             padding-left: 15px;
             font-weight: 800;
             font-family: 'Nunito', sans-serif;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            color: #000;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -138,9 +154,9 @@
         <div>Profesión:</div>
         <div><strong>Desarrollador de aplicaciones y sitios web</strong></div>
         <div>Correo Electrónico:</div>
-        <div>alfonzodiez@gmail.com</div>
+        <div><a href="mailto:alfonzodiez@gmail.com">alfonzodiez@gmail.com</a></div>
         <div>Sitio Web:</div>
-        <div>https://alfonzodiez.info.ve/</div>
+        <div><a href="https://alfonzodiez.info.ve/">https://alfonzodiez.info.ve/</a></div>
         <div>Idiomas:</div>
         <div><strong>Español:</strong> Nativo, <strong>Inglés:</strong> Básico (Lectura, Escritura)</div>
     </div>
@@ -236,6 +252,7 @@
                 <li class="list--check">Introducción a Terminal y Línea de Comandos 2016</li>
                 <li class="list--check">Carrera Desarrollo con WordPress</li>
                 <li class="list--check">Carrera Desarrollo Web Backend con PHP</li>
+                <li><a href="https://platzi.com/@alfonzodiez/" target="_blank">https://platzi.com/@alfonzodiez/</a></li>
             </ul>
         </li>
         <li>Ponente Conferencia "HablemosWeb" en el estado Yaracuy 2013.</li>
